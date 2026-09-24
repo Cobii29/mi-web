@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- Declara que el documento es HTML5 -->
+<html lang="es">
+<!-- Elemento raíz; lang="es" indica el idioma a buscadores y lectores de pantalla -->
+
+<head>
+  <!-- Metadatos del documento (no se muestran en la página) -->
+  <meta charset="UTF-8">
+  <!-- Codificación: permite tildes y ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adapta la página al ancho de cada dispositivo -->
+  <meta name="description" content="Web personal de Bryan Valenzuela Cadena, estudiante de 1º DAM en el IES Simarro.">
+  <!-- Descripción que muestran los buscadores -->
+  <title>Bryan Valenzuela Cadena | Desarrollo de Aplicaciones</title>
+  <!-- Título de la pestaña -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tipografía Inter de Google Fonts -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Hoja de estilos propia -->
+</head>
+
+<body>
+  <!-- Contenido visible de la página -->
+
+  <header class="cabecera">
+    <!-- Cabecera: presentación principal -->
+
+    <nav class="nav" aria-label="Navegación principal">
+      <!-- Menú de navegación -->
+      <a href="#inicio" class="nav__logo">BVC<span>.</span></a>
+      <!-- Logo con las iniciales -->
+      <button type="button" class="nav__menu" id="botonMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <!-- Botón hamburguesa: solo visible en móvil -->
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__lista" id="menu">
+        <!-- Lista de enlaces a cada sección -->
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#trayectoria">Lo que he hecho</a></li>
+        <li><a href="#gustos">Me gusta</a></li>
+        <li><a href="#juego">Juega</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero" id="inicio">
+      <!-- Bloque de presentación -->
+      <p class="hero__etiqueta">1º DAM · IES Simarro</p>
+      <!-- Pequeña etiqueta sobre el nombre -->
+      <h1 class="hero__nombre">Bryan Valenzuela Cadena</h1>
+      <!-- Título principal (único h1 de la página) -->
+      <p class="hero__frase">Sistemas, código y mentalidad de empresa: construyendo mi camino paso a paso.</p>
+      <!-- Frase personal -->
+      <a href="#contacto" class="boton">Hablemos</a>
+      <!-- Botón que lleva al contacto -->
+    </div>
+  </header>
+
+  <main>
+    <!-- Contenido principal de la página -->
+
+    <section id="sobre-mi" class="seccion">
+      <!-- Sección "Sobre mí" -->
+      <h2 class="seccion__titulo"><span>01</span> Sobre mí</h2>
+      <!-- Título de sección con número decorativo -->
+      <div class="sobre-mi">
+        <p>
+          Soy <strong>Bryan Valenzuela Cadena</strong> y estudio
+          <strong>1º de Desarrollo de Aplicaciones Multiplataforma (DAM)</strong>
+          en el <strong>IES Simarro</strong>. Antes terminé
+          <strong>ASIR</strong> (Administración de Sistemas Informáticos en Red),
+          así que llego a la programación con una base en sistemas y redes.
+          <!-- strong: marca texto importante -->
+        </p>
+        <p>
+          Mi objetivo es ambicioso: <strong>llegar a ser millonario</strong>. Quiero
+          conseguirlo creando proyectos y negocios propios, uniendo la parte técnica
+          con la visión de empresa.
+        </p>
+      </div>
+    </section>
+
+    <section id="trayectoria" class="seccion">
+      <!-- Sección "Lo que he hecho" -->
+      <h2 class="seccion__titulo"><span>02</span> Lo que he hecho</h2>
+      <div class="tarjetas">
+        <!-- Rejilla de tarjetas -->
+
+        <article class="tarjeta">
+          <!-- article: bloque de contenido independiente -->
+          <p class="tarjeta__tipo">Formación</p>
+          <h3>CFGS ASIR</h3>
+          <p>Ciclo superior de Administración de Sistemas Informáticos en Red: sistemas operativos, redes, servidores y seguridad.</p>
+        </article>
+
+        <article class="tarjeta">
+          <p class="tarjeta__tipo">Proyecto</p>
+          <h3>Proyecto de empresa</h3>
+          <p>Diseño y planificación de una empresa: idea de negocio, organización y puesta en marcha.</p>
+        </article>
+
+        <article class="tarjeta">
+          <p class="tarjeta__tipo">Experiencia</p>
+          <h3>Viaje a Dublín</h3>
+          <p>Una experiencia en Irlanda que me sirvió para practicar inglés y conocer otra cultura.</p>
+        </article>
+
+        <article class="tarjeta">
+          <p class="tarjeta__tipo">Deporte</p>
+          <h3>Fútbol</h3>
+          <p>Mi deporte y culé de corazón: soy del FC Barcelona. Me enseña disciplina, trabajo en equipo y constancia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gustos" class="seccion">
+      <!-- Sección "Me gusta" -->
+      <h2 class="seccion__titulo"><span>03</span> Me gusta</h2>
+      <ul class="gustos">
+        <!-- Lista de aficiones -->
+        <li class="gustos__barca">FC Barcelona</li>
+        <!-- Clase especial para destacarlo con los colores azulgrana -->
+        <li>Fútbol</li>
+        <li>Música</li>
+        <li>Series</li>
+        <li>Videojuegos</li>
+      </ul>
+    </section>
+
+    <section id="juego" class="seccion">
+      <!-- Sección del minijuego de penaltis -->
+      <h2 class="seccion__titulo"><span>04</span> Juega: tanda de penaltis</h2>
+      <p class="juego__intro">Tienes 5 penaltis. Elige dónde chutar y que no te lo pare el portero.</p>
+
+      <div class="juego">
+        <!-- Contenedor del juego -->
+
+        <div class="marcador" aria-live="polite">
+          <!-- aria-live: los lectores de pantalla leen los cambios -->
+          <p>Goles: <strong id="goles">0</strong></p>
+          <p>Tiro: <strong id="tiro">0</strong> / 5</p>
+          <p>Récord: <strong id="record">0</strong></p>
+        </div>
+
+        <div class="porteria" id="porteria">
+          <!-- Portería con el portero y el balón -->
+          <div class="portero" id="portero"></div>
+          <!-- El portero se mueve con clases CSS -->
+          <div class="balon" id="balon"></div>
+          <!-- El balón vuela hacia la zona elegida -->
+        </div>
+
+        <p class="juego__mensaje" id="mensaje" aria-live="polite">¡Elige tu tiro!</p>
+        <!-- Mensaje con el resultado de cada tiro -->
+
+        <div class="juego__botones">
+          <!-- Botones para elegir la dirección del tiro -->
+          <button type="button" class="boton-tiro" data-zona="izquierda">⬅ Izquierda</button>
+          <button type="button" class="boton-tiro" data-zona="centro">⬆ Centro</button>
+          <button type="button" class="boton-tiro" data-zona="derecha">Derecha ➡</button>
+        </div>
+
+        <button type="button" class="boton juego__reiniciar" id="reiniciar" hidden>Jugar otra vez</button>
+        <!-- hidden: oculto hasta que termina la tanda -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacto" class="pie">
+    <!-- Pie de página con contacto -->
+    <h2 class="pie__titulo">¿Hablamos?</h2>
+    <p class="pie__texto">Si quieres contactar conmigo, escríbeme.</p>
+    <address class="pie__contacto">
+      <!-- address: datos de contacto del autor -->
+      <a href="mailto:tu@correo.com">tu@correo.com</a>
+      <!-- Cambia por tu correo real -->
+      <a href="https://github.com/usuario" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/usuario" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- target="_blank" abre en otra pestaña; rel="noopener" por seguridad -->
+    </address>
+    <p class="pie__copy">&copy; <span id="anio"></span> Bryan Valenzuela Cadena · 1º DAM · IES Simarro</p>
+    <!-- El año lo pone script.js -->
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- JavaScript al final, cuando el HTML ya está cargado -->
+</body>
+</html>
